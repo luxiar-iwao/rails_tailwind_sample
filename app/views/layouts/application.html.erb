@@ -23,6 +23,18 @@
   </head>
 
   <body>
+  <header class="bg-cyan-500 fixed top-0 left-0 right-0 z-50 shadow">
+    <nav class="container mx-auto px-5 py-3 flex justify-start items-center gap-4">
+      <div class="text-white text-xl font-bold">
+        <%= link_to "Tailwind Sample", root_path %>
+      </div>
+      <div class="space-x-4">
+        <%= link_to "クライアント管理", clients_path, class: "text-white hover:text-blue-600" %>
+      </div>
+      <div class="space-x-4">
+        <%= link_to "スタッフ管理", staffs_path, class: "text-white hover:text-blue-600" %>
+      </div>
+  </header>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
